@@ -31,4 +31,23 @@ public class CharacterImpl implements Character_Interface {
 		this.isMale = isMale;
 	}
 
+	public String toString() {
+		if (isMale)
+		return name + " is a male that has " + hairColor + " hair, " + eyeColor + " eyes, " + skinColor + " skin, and is affiliated with " + Affiliation;
+		else
+		return name + " is a female that has " + hairColor + " hair, " + eyeColor + " eyes, " + skinColor + " skin, and is affiliated with " + Affiliation;
+	}
+	
+	public Character_Interface.hairColor getHair() {
+		return hairColor;
+	}
+	public Character_Interface.Affiliation getAffiliation() {
+		return Affiliation;
+	}
+	public Character_Interface.eyeColor getEyes() {
+		return eyeColor;
+	}
+	public Character_Interface.skinColor getSkin() {
+		return skinColor;
+	}
 }
