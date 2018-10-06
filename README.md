@@ -34,7 +34,6 @@ Kris Jordan
 Casey Jacobs
 
 Silent Sam
-
 Montek Singh
 
 Yellow Guy
