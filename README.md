@@ -26,4 +26,4 @@ Ketan Mayer Patel,
 Alex Kimball,
 Dean Smith,
 Eve Carson,
-Gary The Pit Preacher,
+and Gary The Pit Preacher.
