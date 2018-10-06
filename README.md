@@ -5,7 +5,6 @@ HackNC2018 Project (Contributors: Mattheus Bezerra, Mahler Revsine, Jared Goldma
 Guess-Who UNC themed game with UNC figures (24 of them) as follows:
 Carol Folt
 Ramses
-
 Joanne the Crossing Guard
 
 Roy Williams
