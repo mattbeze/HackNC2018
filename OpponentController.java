@@ -16,7 +16,47 @@ public OpponentController(CharacterImpl choice, gameView gv)
 	this.gv = gv;
 	this.choice = choice;
 }
-
+public void guess() {
+	int typeGuess = new Random().nextInt(6); //Sex,Aff,Hair,Skin,Age,Name
+	if (typeGuess == 0) { //SexCheck
+			handleSexGuess(opponentChoice.isMale());
+	}
+	if (typeGuess == 1) { //AgeCheck
+		handleAgeGuess(opponentChoice.getAge());
+	}
+	if (typeGuess == 2) { //HairCheck
+		int nextGuess = new Random().nextInt(4);
+		if (nextGuess == 0){
+			handleHairGuess(Character_Interface.hairColor.BLACK);
+		}
+		if (nextGuess == 1){
+			handleHairGuess(Character_Interface.hairColor.BLONDE);
+		}
+		if (nextGuess == 2){
+			handleHairGuess(Character_Interface.hairColor.BROWN);
+		}
+		if (nextGuess == 3){
+			handleHairGuess(Character_Interface.hairColor.OTHER);
+		}
+	}
+	if (typeGuess == 3) { //AffCheck
+		handleAffiliationGuess(opponentChoice.getAffiliation());
+	}
+	if (typeGuess == 4) { //SkinCheck
+		int nextGuess = new Random().nextInt(2);
+		if (nextGuess == 0){
+			handleSkinGuess(Character_Interface.skinColor.BLACK);
+		}
+		if (nextGuess == 1){
+			handleSkinGuess(Character_Interface.skinColor.WHITE);
+		}
+		if (nextGuess == 2){
+			handleSkinGuess(Character_Interface.skinColor.OTHER);
+		}
+	}
+	if (typeGuess == 5) { //NameCheck
+		handleNameGuess(opponentChoice.getName());
+}
 public void handleHairGuess(CharacterImpl.hairColor hair) {
 	boolean opponentChar = hairCheck(opponentChoice, hair);
 	for (int i=0; i<possible.size(); i++)
